@@ -1,8 +1,8 @@
 name: Info Output
 on: workflow_dispatch
 jobs:
-  test-react:
+  info:
     runs-on: ubuntu-latest
     steps:
       - name: Info Output
-        uses: rcho "${{ toJson(github) }}"
+        uses: echo "${{ toJson(github) }}"
